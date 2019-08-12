@@ -10,8 +10,35 @@
     <div class="header">
         <h1>TO DO LIST</h1>
     </div>
-    <form>
+    <form method="post" action="">
         <input type="text" name="task" class="task">
         <button type="submit" name="submit" class="btn">Add Task</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>N</th>
+                <th></th>
+                <th>Task</th>
+                <th>Action</th>
+                <th></th>
+                <th></th>
+                <th>Time</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
 </body>
 </html>
