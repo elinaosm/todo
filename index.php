@@ -24,7 +24,7 @@
    if (isset($_GET['edit_task'])) {
        $id = $_GET['edit_task'];
     //IZLAAAAAABOT
-        mysqli_query($db, "UPDATE tasks SET task='$task' id=$id");
+        mysqli_query($db, "UPDATE tasks SET task WHERE id=$id");
    }
 
     $tasks = mysqli_query($db, "SELECT * FROM tasks");
@@ -36,12 +36,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>to do list</title>
-   
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a61116abf5.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
-        <h1>TO DO LIST</h1>
+        <h1>TODO LIST</h1>
     </div>
     <form method="POST" action="index.php" >
     <?php if (isset($errors)) { ?>
@@ -66,9 +67,9 @@
             <td><?php echo $i; ?></td>
             <td class="task"><?php echo $row['task']; ?></td>
             <td class="edit">
-                <a href="index.php?del_task=<?php echo $row['id']; ?>">edit</a>
+                <a href="index.php?del_task=<?php echo $row['id']; ?>"<i class="far fa-edit"></i></a>
             <td class="erase">
-                <a href="index.php?del_task=<?php echo $row['id']; ?>">ER</a>
+                <a href="index.php?del_task=<?php echo $row['id']; ?>"><i class="far fa-trash-alt"></i></a>
             </td>
         </tr>
     <?php $i++; } ?>
