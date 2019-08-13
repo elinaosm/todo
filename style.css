@@ -1,10 +1,6 @@
 body {
     font-size: 20px;
 }
-
-
-
-
 .header {
     width: 50%;
     margin: 30px auto;
@@ -35,6 +31,10 @@ form {
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px 20px;
+}
+form p {
+    color: red;
+    margin: 0px;
 }
 table {
     width: 50%;
