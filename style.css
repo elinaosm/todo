@@ -13,10 +13,10 @@ body {
     border-radius: none;
 }
 form {
-    width: 49%;
+    width: 47%;
     margin: 30px auto;
     border-radius: none;
-    padding: 10px;
+    padding: 20px;
     background: white;
     border: 1px solid black;
 }
@@ -45,7 +45,7 @@ table {
     border-collapse: collapse;
 }
 tr {
-    border-bottom: 1px solid red;
+    border-bottom: 0.5px solid whitesmoke;
 }
 th {
     font-size: 19px;
@@ -57,28 +57,28 @@ th, td {
     padding: 2px;
 }
 tr:hover {
-    background: pink;
+    background: whitesmoke;
 }
 .task {
-    text-align: left;
+    text-align: center;
 }
-/*.erase {
+.erase {
     text-align: left;
 }
 .erase a{
     color: white;
-    background: lightcoral;
+    background: lightskyblue;
     padding: 1px 6px;
-    border-radius: 3px;
+    border-radius: 4px;
     text-decoration: none;
 }
-/*.edit {
-    text-align: left;
+.edit {
+    text-align: center;
 }
 .edit a{
     color: white;
-    background: lightcoral;
+    background: lightskyblue;
     padding: 1px 6px;
-    border-radius: 3px;
+    border-radius: 4px;
     text-decoration: none;
 }

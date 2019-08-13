@@ -20,13 +20,6 @@
         header('location: index.php');
     }
 
-  //  uzdevuma labošana
-   if (isset($_GET['edit_task'])) {
-       $id = $_GET['edit_task'];
-    //IZLAAAAAABOT
-        mysqli_query($db, "UPDATE tasks SET task WHERE id=$id");
-   }
-
     $tasks = mysqli_query($db, "SELECT * FROM tasks");
 ?>
 <!DOCTYPE html>
@@ -56,18 +49,18 @@
   <table>
     <thead>
         <tr>
-            <th>No</th>
+            <th></th>
             <th>TASK</th>
-            <th>ACTIONS</th>
+            <th></th>
         </tr>
-    </thead>?
+    </thead>
     <tbody>
     <?php $i = 1; while ($row = mysqli_fetch_array($tasks)) { ?>
         <tr>
             <td><?php echo $i; ?></td>
             <td class="task"><?php echo $row['task']; ?></td>
             <td class="edit">
-                <a href="index.php?del_task=<?php echo $row['id']; ?>"<i class="far fa-edit"></i></a>
+                <a href="index.php?del_task=<?php echo $row['id']; ?>"><i class="far fa-edit"></i></a>
             <td class="erase">
                 <a href="index.php?del_task=<?php echo $row['id']; ?>"><i class="far fa-trash-alt"></i></a>
             </td>
