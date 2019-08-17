@@ -1,10 +1,10 @@
 body {
     font-size: 20px;
+    background-color: white;
     font-family: 'Poppins', sans-serif;
-
 }
 .header {
-    width: 50%;
+    width: 70%;
     margin: 30px auto;
     text-align: center;
     color: black;
@@ -36,7 +36,7 @@ form {
     font-weight: bold;
 }
 form p {
-    color: red;
+    color: blueviolet;
     margin: 0px;
 }
 table {
@@ -45,7 +45,7 @@ table {
     border-collapse: collapse;
 }
 tr {
-    border-bottom: 0.5px solid whitesmoke;
+    border-bottom: 0.5px solid white;
 }
 th {
     font-size: 19px;
@@ -82,3 +82,66 @@ tr:hover {
     border-radius: 4px;
     text-decoration: none;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+.open-button {
+    background-color: whitesmoke;
+    color: grey;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 80px;
+    left: 0px;
+    width: 200px;
+  }
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+    z-index: 9;
+    font-size: 15px;
+  }
+  .form-container {
+    max-width: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: -20px;
+    background-color: white;
+  }
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .form-container .btn {
+    background-color: whitesmoke;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .form-container .cancel {
+    background-color: grey;
+  }
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
