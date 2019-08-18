@@ -84,7 +84,7 @@
             <td><?php echo $i; ?></td>
             <td class="task"><?php echo $row['task']; ?></td>
             <td class="edit">
-                <a href="index.php?del_task=<?php echo $row['id']; ?>"><i class="far fa-edit"></i></a></td>
+                <a href="index.php?edit_task=<?php echo $row['id']; ?>"><i class="far fa-edit"></i></a></td>
             <td class="erase">
                 <a href="index.php?del_task=<?php echo $row['id']; ?>"><i class="far fa-trash-alt"></i></a>
             </td>

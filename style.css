@@ -40,7 +40,7 @@ form p {
     margin: 0px;
 }
 table {
-    width: 50%;
+    width: 60%;
     margin: 30px auto;
     border-collapse: collapse;
 }
@@ -101,7 +101,7 @@ tr:hover {
     position: fixed;
     bottom: 80px;
     left: 0px;
-    width: 200px;
+    width: 150px;
   }
   .form-popup {
     display: none;
@@ -130,7 +130,7 @@ tr:hover {
     outline: none;
   }
   .form-container .btn {
-    background-color: whitesmoke;
+    background-color: lightskyblue;
     color: black;
     padding: 16px 20px;
     border: none;
@@ -140,7 +140,7 @@ tr:hover {
     opacity: 0.8;
   }
   .form-container .cancel {
-    background-color: grey;
+    background-color: blueviolet;
   }
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
